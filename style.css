@@ -10,6 +10,14 @@ p {
    width: 500px;
 }
 
+a:active {
+    color: lime;
+}
+
+dl {
+    word-wrap: break-word;
+    width: 500px;
+}
 
 
 body {
