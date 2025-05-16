@@ -2,17 +2,27 @@
 
 :root {
     font-family: "Space Grotesk", sans-serif;
+    background-color: #fffff4;
 }
+
+p {
+   word-wrap: break-word;
+   width: 500px;
+}
+
+
 
 body {
     margin: 0;
     padding: 0;
 }
 
-#outer {
+.outer {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    animation-name: dropIn;
+    animation-duration: 1000ms;
 }
 
 #name {
@@ -23,14 +33,15 @@ body {
     padding: 0px;
     margin: 0px;
     width: 100%;
+    animation-name: dropIn;
+    animation-duration: 500ms;
 }
 
 .img-row {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 3px;
-    border-radius: 5px;
+    /* padding: 3px; */
 }
 
 img {
@@ -39,4 +50,16 @@ img {
     flex-direction: row;
     margin: auto;
     border: 1px solid black;
+}
+
+@keyframes dropIn {
+    0% {
+        opacity: 0;
+        translate: 0px -70px;
+    }
+
+    100% {
+        opacity: 100%;
+        translate: 0px 0px;
+    }
 }
