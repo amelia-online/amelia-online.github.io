@@ -63,6 +63,35 @@
                             implement different aspects of the website such as chats, notifications,
                             user roles, and more smaller details. 
                         </dd>
+                        <dt>JPL Compiler</dt>
+                        <dd>
+                            As part of my Compilers class, I developed a full compiler for a language called
+                            JPL (John Pavel Lang). The compiler included a full lexer, parser, typechecker, 
+                            and code generation to C and x86 Assembly (NASM) with -O1 and -O3 optimizations.
+                            Here is a snippet of the language:
+                            <br>
+                            <br>
+                            <pre><code>
+read image "cat.jpg" to catImg                         
+fn modify(img[H, W] : rgba[,]) : rgba[,] {                        
+    return array [i : H, j : W] rgba { \
+        img[i, j].r * 0.5, \
+        img[i, j].g * 0.6, \
+        img[i, j].b * 0.3, \
+        1.0                \
+    }
+}
+let final = modify(catImg)
+write image catImg to "result.jpg"
+                            </code></pre>
+
+                            <br>
+                            <br>
+
+                            The code above reads an image and stores it to a variable. It creates a new image by calling the <code>modify</code> function
+                            which copies the image but modifies the r, g, and b values. The resulting image is then written to "result.jpg."
+
+                        </dd>
                         <dt>Sprite Editor</dt>
                         <dd>
                             As part of my Software Practice II class, I, in a team of four, helped develop a
