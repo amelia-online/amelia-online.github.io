@@ -7,7 +7,7 @@
 
 p {
    word-wrap: break-word;
-   width: 500px;
+   width: 36.458vw;
 }
 
 a:active {
@@ -16,7 +16,7 @@ a:active {
 
 dl {
     word-wrap: break-word;
-    width: 500px;
+    width: 36.458vw;
 }
 
 
@@ -53,7 +53,7 @@ body {
 }
 
 img {
-    width: 25vw;
+    width: 26.042vw;
     display: flex;
     flex-direction: row;
     margin: auto;
@@ -70,4 +70,37 @@ img {
         opacity: 100%;
         translate: 0px 0px;
     }
+}
+
+@media screen and (width <= 500px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+    }
+
+    p {
+        word-wrap: break-word;
+        width: 50vw;
+    }
+
+    dd {
+        word-wrap: break-word;
+        width: 50vw;
+    }
+
+    .outer {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        animation-name: dropIn;
+        animation-duration: 1000ms;
+        margin: 25vw;
+    }
+
+    img {
+        width: 55vw;
+    }
+
 }
