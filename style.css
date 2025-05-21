@@ -60,6 +60,14 @@ img {
     border: 1px solid black;
 }
 
+pre {
+    background-color: black;
+    border: 2px solid grey;
+    border-radius: 5px;
+    color: white;   
+    padding-left: 50px;
+}
+
 @keyframes dropIn {
     0% {
         opacity: 0;
@@ -72,7 +80,8 @@ img {
     }
 }
 
-@media screen and (width <= 500px) {
+@media screen and (width <= 600px) {
+
     body {
         display: flex;
         flex-direction: column;
@@ -82,12 +91,20 @@ img {
 
     p {
         word-wrap: break-word;
-        width: 50vw;
+        width: 75vw;
     }
 
     dd {
         word-wrap: break-word;
-        width: 50vw;
+        width: 65vw;
+    }
+
+    pre {
+        padding-left: 0;
+        border: none;
+        background-color: #fffff4;
+        color: black;
+        font-size: 10px;
     }
 
     .outer {
@@ -96,7 +113,7 @@ img {
         justify-content: flex-end;
         animation-name: dropIn;
         animation-duration: 1000ms;
-        margin: 25vw;
+        margin: 5vw;
     }
 
     img {
